@@ -1,0 +1,117 @@
+.sidebar {
+    display: flex;
+    flex: .3;
+    height: 100vh;
+    background: #393943; //TODO:atoでhomeに移動させる
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7px 15px;
+        background: #1a1c20;
+    }
+
+    &__right {
+        flex-grow: 1;
+        position: relative;
+        width: 300px;
+        background: #303136;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: #fff;
+    }
+
+    &__channels {
+        padding: 13px;
+    }
+
+}
+
+.channels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    color: #fff;
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__addicon {
+        cursor: pointer;
+    }
+}
+
+.serverIcon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 7px 0 10px;
+    background: #393943;
+    border-radius: 999px;
+
+    &__span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    margin-left: -3px;
+    padding: 10px 0;
+    border-top: 1px solid #686a6e;
+
+    &__account {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .accountName {
+        margin-left: 5px;
+
+        h4 {
+            font-weight: 500;
+            color: #fff;
+        }
+
+        span {
+            color: #686a6e;
+        }
+    }
+
+    &__voice {
+        display: flex;
+        align-items: center;
+        color: #686a6e;
+    }
+}

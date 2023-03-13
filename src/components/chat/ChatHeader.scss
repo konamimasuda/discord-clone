@@ -1,0 +1,44 @@
+.chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+
+    &__left {
+        padding-left: 15px;
+        color: #fff;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding-right: 15px;
+        color: #7b7c85;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    &__hash {
+        padding-right: 7px;
+        color: #7b7c85;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        background: #282831;
+        border-radius: 3px;
+
+        input {
+            background: transparent;
+            outline: none;
+            color: #fff;
+            border: none;
+        }
+    }
+}

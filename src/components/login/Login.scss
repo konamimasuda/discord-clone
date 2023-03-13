@@ -1,0 +1,29 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+
+    button {
+        width: 200px;
+        background: #738adb;
+        color: #eff2f5;
+        font-weight: 800;
+
+        &:hover {
+            background: #000;
+            color: #738adb;
+        }
+    }
+
+    &__logo {
+
+        img {
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+}
